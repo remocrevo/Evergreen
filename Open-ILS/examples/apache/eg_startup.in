@@ -14,6 +14,7 @@ use OpenILS::WWW::EGWeb ('@sysconfdir@/opensrf_core.xml', 'OpenILS::WWW::EGCatLo
 use OpenILS::WWW::IDL2js ('@sysconfdir@/opensrf_core.xml');
 use OpenILS::WWW::FlatFielder;
 use OpenILS::WWW::PhoneList ('@sysconfdir@/opensrf_core.xml');
+use OpenILS::WWW::OAI qw( <openils sysdir>conf/opensrf_core.xml );
 
 # - Uncomment the following 2 lines to make use of the IP redirection code
 # - The IP file should to contain a map with the following format:

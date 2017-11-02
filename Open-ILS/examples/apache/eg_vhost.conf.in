@@ -88,6 +88,15 @@ OSRFTranslatorConfig @sysconfdir@/opensrf_core.xml
     Allow from All
 </Location>
 
+# Uncomment this section to enable the OAI2 provider service.
+#<Location /opac/extras/oai>
+#    SetHandler perl-script
+#    PerlHandler OpenILS::WWW::OAI
+#    Options +ExecCGI
+#    PerlSendHeader On
+#    allow from all
+#</Location>
+
 # ----------------------------------------------------------------------------------
 # Replace broken cover images with a transparent GIF by default
 # ----------------------------------------------------------------------------------
